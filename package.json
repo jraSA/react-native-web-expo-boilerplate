@@ -1,0 +1,50 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --fix"
+  },
+  "dependencies": {
+    "@types/jest": "^25.2.1",
+    "expo": "^37.0.0",
+    "prop-types": "^15.7.2",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.0.tar.gz",
+    "react-native-gesture-handler": "^1.6.1",
+    "react-native-screens": "^2.4.0",
+    "react-native-web": "^0.11.7",
+    "react-navigation": "^3.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@types/react": "^16.9.11",
+    "@types/react-native": "^0.60.22",
+    "@types/react-test-renderer": "^16.9.2",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "babel-preset-expo": "^8.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-universe": "^3.0.0",
+    "jest-expo": "^37.0.0",
+    "prettier": "^2.0.4",
+    "react-test-renderer": "^16.13.1",
+    "typescript": "^3.8.3"
+  },
+  "private": true,
+  "eslintConfig": {
+    "extends": "universe/native"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|@sentry/.*)"
+    ]
+  }
+}
