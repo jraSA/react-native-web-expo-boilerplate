@@ -1,4 +1,4 @@
-# Expo Web Boiler Plate
+# React-Native-Web Expo Boilerplate
 
 # Summary
 
